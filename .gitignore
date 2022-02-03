@@ -1,0 +1,4 @@
+.idea/
+vendor/
+esw-hcl-compiler
+test_*/

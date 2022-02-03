@@ -1,0 +1,7 @@
+test_*/
+.git/
+.idea/
+.gitignore
+vendor/
+esw-hcl-compiler
+Makefile
