@@ -1,7 +1,8 @@
 # ESW HCL Compiler
 
-A compiler that transforms HCL configuration files into JSON, and resolves IRIs that 
-contain a prefix. It is required for the current version ESW.
+This customized compiler is designed to convert HCL (HashiCorp Configuration Language) configuration files into
+JSON format, but also to resolves IRIs (Internationalized Resource Identifiers) that incorporate a prefix. This
+functionality is essential for the latest version of [ESW](https://github.com/khaller93/es-web-app).
 
 ## Build
 
@@ -14,26 +15,24 @@ go mod vendor && go build
 
 ### Docker Image
 
-This repository provides a Dockerfile with which a small Docker image can be built as shown
-in the following command.
+This repository includes a Dockerfile that enables the creation of a compact Docker image, as demonstrated by the
+command below.
 
 ```
 docker build . --build-arg ESW_COMP_VERSION=latest -t yyyyy/esw-hcl-compiler:latest
 ```
-Built images can be found [here](https://hub.docker.com/repository/docker/khaller/esw-hcl-compiler/tags).
 
 ## Run 
 
-The build creates a binary for your operating system and architecture. Then, you can
-execute the following command 
+The build process generates a binary tailored to your operating system and architecture. Afterward, you can run the
+command outlined below:
 
 ```
 ./esw-hcl-compiler <configuration-directory> <output-directory>
 ```
 
-It will read in all configuration files that can be found in the given directory,
-and then write the JSON result of the compilation to the output directory. This directory
-can then be handed to the exploratory search application.
+It will read in all configuration files that can be found in the given directory, and then write the JSON result of the
+compilation to the output directory. This directory can then be handed to the [ESW](https://github.com/khaller93/es-web-app).
 
 ## Contact
 
