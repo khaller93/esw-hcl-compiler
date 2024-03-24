@@ -4,6 +4,8 @@ This customized compiler is designed to convert HCL (HashiCorp Configuration Lan
 JSON format, but also to resolves IRIs (Internationalized Resource Identifiers) that incorporate a prefix. This
 functionality is essential for the latest version of [ESW](https://github.com/khaller93/es-web-app).
 
+This code is licensed under [Mozilla Public License, version 2.0 by HashiCorp, Inc.](https://github.com/hashicorp/hcl/blob/main/LICENSE)
+
 ## Build
 
 Requirements:
